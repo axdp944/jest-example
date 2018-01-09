@@ -1,0 +1,77 @@
+React Installation
+Friday, December 22, 2017
+5:00 PM
+ 
+# Install nodeJS
+# Install ReactJS create-react-app
+$ npm install -g create-react-app
+# Create your project
+$ create-react-app <project name>
+$ cd <project name>
+ 
+ npm start
+ 
+ 
+# Jest unit test installation - requires additional steps: 
+# In Intellij install "React Native Console"
+https://stackoverflow.com/a/39648550/1464757
+ 
+ 
+ 
+# Install windows build tools (necessary for some dependencies like Jest for unit testing
+# Execute from an admin powershell:
+npm install --global --production windows-build-tools
+# Set PYTHON environment variable: 
+setx PYTHON "%USERPROFILE%\.windows-build-tools\python27\python.exe"
+# restart cmd console and verify environment is correct:
+ 
+ 
+ 
+npm install --global node-gyp
+ 
+ 
+ 
+.NET Framework 2.0 SDK
+https://www.microsoft.com/en-us/download/details.aspx?id=15354
+ 
+Install setup.exe
+ 
+Issues:
+Jest will still not run on intellij until 1017.3.3.
+"No tests found"
+ Trying EAP version for now
+ 
+# Intellij: Fix annoying "unresolved function or method" around Jest test methods:
+ 
+In Preferences | Languages & Frameworks | JavaScript | Libraries, press Download..., select 'jest' from the list of available stubs, press Download and Install
+ 
+ 
+ 
+# React Unit test error: Document is undefined: Fix
+ 
+Add "--env=jsdom" in Jest options of runner (Probably a good idea to just add this to the Jest default options
+ 
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000242490-Jest-error-Document-is-undefined
+ 
+ 
+ 
+ 
+Sources:
+https://redux.js.org/
+ 
+https://github.com/erikras/ducks-modular-redux
+ 
+https://github.com/reactjs/react-redux
+https://github.com/reactjs/redux
+ 
+https://github.com/axios/axios
+ 
+https://github.com/gaearon/redux-thunk
+ 
+https://github.com/redux-saga/redux-saga
+ 
+https://github.com/typicode/json-server
+ 
+ 
+ 
+ 
